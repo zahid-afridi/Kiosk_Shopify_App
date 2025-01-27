@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.subscription-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping if the screen size is too small */
+  justify-content: center; /* Centers the cards horizontally */
+  gap: 20px; /* Adds space between the cards */
+  width: 100%; /* Full width */
+  max-width: 1200px; /* Limit the maximum width for better readability */
+  margin: 0 auto; /* Center the container */
+  font-family: "Poppins", serif;
+  font-weight: 500;
+}
+.monthly-plan-card {
+  border-radius: 10px;
+  padding: 30px;
+  border-top: 3px solid #3d8822;
+  transition: 0.6s ease;
+}
+.subscription-card h1 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+.poloris-card-header {
+  border-bottom: 2px solid #f1f1f1;
+  margin-bottom: 30px;
+}
+.subscription-card h1 .monthly {
+  font-size: 1rem;
+}
+.subscription-card {
+  flex: 1 1 calc(50% - 20px);
+  max-width: calc(50% - 20px);
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  /* transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;  */
+}
+.subscription-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.selected {
+  background-color: #dddddd;
+  padding: 15px 50px;
+  border-radius: 40px;
+  margin: 18px 0px;
+}
+.mb {
+  margin-bottom: 20px;
+}
+.unactive-link{
+
+  color: rgba(39, 39, 39, 0.705);
+}
+.default-poloris-class {
+  background-color: #dddddd;
+  padding: 15px 50px;
+  border-radius: 40px;
+  margin: 18px 0px;
+}
+.default-poloris-class:hover {
+  color: #fff;
+  background-color: #558641;
+  transition: 0.3s ease-out;
+}
+.selected:hover {
+  color: #fff;
+  background-color: #9400dd;
+  transition: 0.3s ease-out;
+}
+.list-poloris {
+  list-style: none;
+}
+.list-poloris li {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 13px;
+}

@@ -1,0 +1,34 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "d84d0dd27de3724183d520c4bb2cf351"
+application_url = "https://pic-brochures-buddy-motels.trycloudflare.com"
+embedded = true
+name = "Simple Self Checkout"
+handle = "simple-self-checkout"
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "kiosk-for-test.myshopify.com"
+include_config_on_deploy = true
+
+[webhooks]
+api_version = "2025-01"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_content,read_locales,read_products,read_script_tags,read_themes,write_content,write_locales,write_products,write_script_tags,write_themes"
+
+[auth]
+redirect_urls = [
+  "https://pic-brochures-buddy-motels.trycloudflare.com/auth/callback",
+  "https://pic-brochures-buddy-motels.trycloudflare.com/auth/shopify/callback",
+  "https://pic-brochures-buddy-motels.trycloudflare.com/api/auth/callback"
+]
+
+[app_proxy]
+url = "https://pic-brochures-buddy-motels.trycloudflare.com/customapi"
+subpath = "proxy"
+prefix = "apps"
+
+[pos]
+embedded = false

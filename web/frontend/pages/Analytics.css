@@ -1,0 +1,48 @@
+/* Analytics.css */
+.metric-box {
+    text-align: center;
+    padding: 32px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 1px solid #e1e3e5; /* Subtle border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .metric-box:hover {
+    transform: translateY(-4px); /* Slight lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+  }
+  
+  .metric-box h2 {
+    font-size: 1.25rem;
+    color: #6d7175; /* Subdued text color */
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  
+  .metric-box p {
+    font-size: 2.5rem;
+    color: #202223; /* Dark text color */
+    margin: 0;
+    font-weight: 600;
+  }
+  /* Add this to .metric-box in Analytics.css */
+  .metric-box {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .metric-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(
+      90deg,
+      #4caf50,
+      #2196f3
+    ); /* Green to Blue gradient */
+  }

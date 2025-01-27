@@ -1,0 +1,26 @@
+
+<div id="kioskModal" class=" hidemodal"  >
+  
+  
+  <div class="modal-content">
+    <button class="close-button" id="closeModal">&times;</button>
+    <h1 class="modal-title">HELLO QR CODE</h1>
+  </div>
+  <div>
+    <img src="{{ 'brandlogo.png' | asset_url }}" class="brandlogos" alt="Visa">
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Kiosk",
+  "target": "body",
+  "stylesheet": "style.css",
+  "javascript": "script.js",
+  "settings": [
+    
+  ]
+}
+{% endschema %}
+
